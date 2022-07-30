@@ -66,6 +66,8 @@ func main() {
 	switch key {
 	case "b":
 		newCursorVal = cursorPos - (cursorPos - activeSeg.start)
+	case "w":
+		newCursorVal = cursorPos + (activeSeg.end - cursorPos)
 	}
 	// fmt.Println("New cursor val: ", newCursorVal)
 	fmt.Println(newCursorVal)
