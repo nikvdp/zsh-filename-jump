@@ -57,11 +57,6 @@ func main() {
 	}()
 	params, _ := extractParams(cmd)
 	activeSeg := params[findSegmentByStrPos(params, cursorPos)]
-	// fmt.Println("cmd", cmd)
-	// fmt.Println("params", params)
-	// fmt.Println("active seg: ", activeSeg)
-	// fmt.Println("cpos", cursorPos)
-	// fmt.Println("key", key)
 	var newCursorVal int
 	switch key {
 	case "b":
@@ -69,6 +64,5 @@ func main() {
 	case "w":
 		newCursorVal = cursorPos + (activeSeg.end - cursorPos)
 	}
-	// fmt.Println("New cursor val: ", newCursorVal)
 	fmt.Println(newCursorVal)
 }
