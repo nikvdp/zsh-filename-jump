@@ -1,4 +1,4 @@
-module github.com/nikvdp/zsh-back-word
+module github.com/nikvdp/zsh-filename-jump
 
 go 1.18
 

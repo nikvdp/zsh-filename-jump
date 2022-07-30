@@ -1,10 +1,10 @@
 function zsh_word_back_widget() {
-  local res=$(zsh-back-word "$BUFFER" "$CURSOR" "b")
+  local res=$(zsh-filename-jump "$BUFFER" "$CURSOR" "b")
   CURSOR=$((res - 1))
 }
 
 function zsh_word_forward_widget() {
-  local res=$(zsh-back-word "$BUFFER" "$CURSOR" "w")
+  local res=$(zsh-filename-jump "$BUFFER" "$CURSOR" "w")
   CURSOR=$((res + 1))
 }
 
